@@ -66,8 +66,8 @@ eksctl create nodegroup --cluster=myeks \
                         --region=us-east-1 \
                         --name=myeks22-ng-public1 \
                         --node-type=t3.medium \
-                        --nodes=3 \
-                        --nodes-min=3 \
+                        --nodes=2 \
+                        --nodes-min=2 \
                         --nodes-max=14 \
                         --node-volume-size=20 \
                         --ssh-access \
