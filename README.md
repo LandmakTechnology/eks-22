@@ -71,7 +71,7 @@ eksctl create nodegroup --cluster=myeks \
                         --nodes-max=14 \
                         --node-volume-size=20 \
                         --ssh-access \
-                        --ssh-public-key=key.nv \
+                        --ssh-public-key=eks \
                         --managed \
                         --asg-access \
                         --external-dns-access \
