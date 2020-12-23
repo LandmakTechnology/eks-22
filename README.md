@@ -29,7 +29,7 @@
 - It will take 15 to 20 minutes to create the Cluster Control Plane 
 ```
 # Create Cluster
-eksctl create cluster --name=myeks \
+eksctl create cluster --name=myeks22 \
                       --region=us-east-1 \
                       --zones=us-east-1a,us-east-1b \
                       --without-nodegroup 
@@ -47,7 +47,7 @@ eksctl get clusters
 # Replace with region & cluster name
 eksctl utils associate-iam-oidc-provider \
     --region us-east-1 \
-    --cluster myeks \
+    --cluster myeks22 \
     --approve
 ```
 
@@ -64,7 +64,7 @@ eksctl utils associate-iam-oidc-provider \
 # Create Public Node Group   
 eksctl create nodegroup --cluster=myeks \
                         --region=us-east-1 \
-                        --name=myeks-ng-public1 \
+                        --name=myeks22-ng-public1 \
                         --node-type=t3.medium \
                         --nodes=3 \
                         --nodes-min=3 \
