@@ -62,7 +62,7 @@ eksctl utils associate-iam-oidc-provider \
 - These add-ons will create the respective IAM policies for us automatically within our Node Group role.
  ```
 # Create Public Node Group   
-eksctl create nodegroup --cluster=myeks \
+eksctl create nodegroup --cluster=myeks22 \
                         --region=us-east-1 \
                         --name=myeks22-ng-public1 \
                         --node-type=t3.medium \
